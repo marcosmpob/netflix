@@ -51,6 +51,7 @@ export default class CameraScreen extends React.Component {
                                 // });
                                 const options = {quality: 2.5, base64: true};
                                 if (this.camera) {
+                                    //console.log('tirou foto')
                                     let photo = await this.camera.takePictureAsync(options);
                                     this.props.navigation.navigate('More',{
                                         image: photo.uri,
