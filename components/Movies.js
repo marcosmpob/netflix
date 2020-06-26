@@ -5,6 +5,7 @@ import {useSpring, animated,interpolate} from 'react-spring'
 
 import styled from 'styled-components/native';
 import Animated from 'react-native-reanimated';
+import { useLinkProps } from '@react-navigation/native';
 
 const Container = styled.View`
   padding: 0px;
@@ -24,7 +25,7 @@ const MoviePoster = styled.Image`
   height: 150px;
 `;
 
-const AnimatedMoviePoster = animated(MoviePoster);
+ const AnimatedMoviePoster = animated(MoviePoster);
 
 
 const MovieCard = styled.View`
@@ -33,7 +34,7 @@ const MovieCard = styled.View`
   padding-left: 0px;
 `;
 
-const Movies = ({label, item}) => {
+const Movies = (props) => {
 
   const [pressing, setPressedIn] = useState({pressed: false});
   
@@ -43,11 +44,13 @@ const Movies = ({label, item}) => {
 
 
 
+
   return (
     <Container>
-      <Label>{label}</Label>
+      <Label>{props.label}</Label>
       <MovieScroll horizontal>
-         {item.map((movie, index) => {
+         {props.data.map((movie, index) => {
+          console.log(movie.Poster);
           return (
             <MovieCard key={String(index)}>
               <TouchableWithoutFeedback
@@ -56,15 +59,13 @@ const Movies = ({label, item}) => {
                 }}
                 onPressIn={() => {
                   setPressedIn({pressed: true, index: index});
-                }}
-                >
+                }}>
                 <AnimatedMoviePoster 
                    style={
                      index === pressing.index ? { transform:[translate] } : null
                    }
-                  //style={translate}
                   resizeMode="cover"
-                  source={movie}
+                  source={{uri: movie.Poster}}
                 />
               </TouchableWithoutFeedback>
             </MovieCard>

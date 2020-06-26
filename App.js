@@ -16,7 +16,6 @@ import {GetLocation} from './services/movieFilter';
 
 const Stack = createStackNavigator();
 
-GetLocation();
 
 const App = () => {
 	return (

@@ -1,0 +1,75 @@
+{
+    "Maria": [
+      {
+        "Title": "The Edge of Democracy",
+        "Year": "2019",
+        "Rated": "TV-14",
+        "Released": "19 Jun 2019",
+        "Runtime": "121 min",
+        "Genre": "Documentary, History",
+        "Director": "Petra Costa",
+        "Writer": "Petra Costa (screenplay), Carol Pires, David Barker, Moara Passoni",
+        "Actors": "Dilma Rousseff, Luiz Inácio Lula da Silva, Marisa Letícia Lula da Silva, Sergio Moro",
+        "Plot": "Political documentary and personal memoir collide in this exploration into the complex truth behind the unraveling of two Brazilian presidencies.",
+        "Language": "Portuguese, English",
+        "Country": "Brazil",
+        "Awards": "Nominated for 1 Oscar. Another 1 win & 11 nominations.",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNDE2NGVmOWItYWI2NC00ZDcxLTk1NmQtYTE5M2U0MmIyYWM1XkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "7.1/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "97%"
+          },
+          {
+            "Source": "Metacritic",
+            "Value": "81/100"
+          }
+        ],
+        "Metascore": "81",
+        "imdbRating": "7.1",
+        "imdbVotes": "11,859",
+        "imdbID": "tt6016744",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "N/A",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      },
+      {
+        "Title": "Black Mirror",
+        "Year": "2011–",
+        "Rated": "TV-MA",
+        "Released": "04 Dec 2011",
+        "Runtime": "60 min",
+        "Genre": "Drama, Sci-Fi, Thriller",
+        "Director": "N/A",
+        "Writer": "Charlie Brooker",
+        "Actors": "Daniel Lapaine, Hannah John-Kamen, Michaela Coel, Beatrice Robertson-Jones",
+        "Plot": "An anthology series exploring a twisted, high-tech multiverse where humanity's greatest innovations and darkest instincts collide.",
+        "Language": "English",
+        "Country": "UK",
+        "Awards": "Won 6 Primetime Emmys. Another 24 wins & 85 nominations.",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BYTM3YWVhMDMtNjczMy00NGEyLWJhZDctYjNhMTRkNDE0ZTI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "8.8/10"
+          }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "8.8",
+        "imdbVotes": "396,848",
+        "imdbID": "tt2085059",
+        "Type": "series",
+        "totalSeasons": "5",
+        "Response": "True"
+      }
+    ]
+  
+  }
+  
