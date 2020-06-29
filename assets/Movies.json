@@ -333,6 +333,151 @@
         "Website": "N/A",
         "Response": "True"
       }
+      ,
+      {
+        "Title": "City of God",
+        "Year": "2002",
+        "Rated": "R",
+        "Released": "13 Feb 2004",
+        "Runtime": "130 min",
+        "Genre": "Crime, Drama",
+        "Director": "Fernando Meirelles, Kátia Lund(co-director)",
+        "Writer": "Paulo Lins (novel), Bráulio Mantovani (screenplay)",
+        "Actors": "Alexandre Rodrigues, Leandro Firmino, Phellipe Haagensen, Douglas Silva",
+        "Plot": "In the slums of Rio, two kids' paths diverge as one struggles to become a photographer and the other a kingpin.",
+        "Language": "Portuguese",
+        "Country": "Brazil, France, Germany",
+        "Awards": "Nominated for 4 Oscars. Another 75 wins & 44 nominations.",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNDJiNTEwMjMtOGQ1ZC00OTczLWFjZjctZWQ0MGJjZmFkMjcwXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "8.6/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "91%"
+          },
+          {
+            "Source": "Metacritic",
+            "Value": "79/100"
+          }
+        ],
+        "Metascore": "79",
+        "imdbRating": "8.6",
+        "imdbVotes": "674,394",
+        "imdbID": "tt0317248",
+        "Type": "movie",
+        "DVD": "08 Jun 2004",
+        "BoxOffice": "N/A",
+        "Production": "Miramax Films",
+        "Website": "N/A",
+        "Response": "True"
+      },
+      {
+        "Title": "Kardec",
+        "Year": "2019",
+        "Rated": "N/A",
+        "Released": "16 May 2019",
+        "Runtime": "110 min",
+        "Genre": "Biography",
+        "Director": "Wagner de Assis",
+        "Writer": "L.G. Bayão, Wagner de Assis",
+        "Actors": "Christian Baltauss, Letícia Braga, Sandra Corveloni, Louise D'Tuani",
+        "Plot": "Tells the story of Allan Kardec, from his days as an educator to his contribution to the spiritist codification.",
+        "Language": "Portuguese",
+        "Country": "Brazil",
+        "Awards": "N/A",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BZmRjZmMyN2EtM2YzMy00ZGRmLTk5MmQtMzZjMDNjZjJiZWM1XkEyXkFqcGdeQXVyMzM1OTgxMDc@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "6.2/10"
+          }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "6.2",
+        "imdbVotes": "1,022",
+        "imdbID": "tt9213932",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "N/A",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      },
+      {
+        "Title": "Making Of: Tropa de Elite 2",
+        "Year": "2011",
+        "Rated": "N/A",
+        "Released": "N/A",
+        "Runtime": "61 min",
+        "Genre": "Documentary",
+        "Director": "Alexandre Lima",
+        "Writer": "Marco Antonelli, Alexandre Lima",
+        "Actors": "Milhem Cortaz, Wagner Moura, André Ramiro, Maria Ribeiro",
+        "Plot": "Documentary that intertwines the traditional register of a making of with the subjects discussed in the film Elite Squad 2: The Enemy Within (2010). The film gathers interviews by director ...",
+        "Language": "Portuguese",
+        "Country": "Brazil",
+        "Awards": "1 nomination.",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNGNkNGU5YzctODgyOC00Mzc2LWJlN2MtZGJiZDJmZGE2MWZhXkEyXkFqcGdeQXVyMTUxMjkwMDg@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "7.6/10"
+          }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "7.6",
+        "imdbVotes": "52",
+        "imdbID": "tt4720736",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "N/A",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      },
+      {
+        "Title": "The Edge of Democracy",
+        "Year": "2019",
+        "Rated": "TV-14",
+        "Released": "19 Jun 2019",
+        "Runtime": "121 min",
+        "Genre": "Documentary, History",
+        "Director": "Petra Costa",
+        "Writer": "Petra Costa (screenplay), Carol Pires, David Barker, Moara Passoni",
+        "Actors": "Dilma Rousseff, Luiz Inácio Lula da Silva, Marisa Letícia Lula da Silva, Sergio Moro",
+        "Plot": "Political documentary and personal memoir collide in this exploration into the complex truth behind the unraveling of two Brazilian presidencies.",
+        "Language": "Portuguese, English",
+        "Country": "Brazil",
+        "Awards": "Nominated for 1 Oscar. Another 1 win & 11 nominations.",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNDE2NGVmOWItYWI2NC00ZDcxLTk1NmQtYTE5M2U0MmIyYWM1XkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "7.1/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "97%"
+          },
+          {
+            "Source": "Metacritic",
+            "Value": "81/100"
+          }
+        ],
+        "Metascore": "81",
+        "imdbRating": "7.1",
+        "imdbVotes": "11,859",
+        "imdbID": "tt6016744",
+        "Type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "N/A",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      }
     ]
   }
   

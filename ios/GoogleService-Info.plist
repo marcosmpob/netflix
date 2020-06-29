@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>202314621236-3v08q51l5tqkjvvqssm02as9kqao5phr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.202314621236-3v08q51l5tqkjvvqssm02as9kqao5phr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAGxVjueNUy_pJioWcw6TBUKpozwgW1M4Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>202314621236</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>netflix</string>
+	<key>PROJECT_ID</key>
+	<string>react-native-netflix</string>
+	<key>STORAGE_BUCKET</key>
+	<string>react-native-netflix.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:202314621236:ios:0709c875199b4f338bc561</string>
+	<key>DATABASE_URL</key>
+	<string>https://react-native-netflix.firebaseio.com</string>
+</dict>
+</plist>

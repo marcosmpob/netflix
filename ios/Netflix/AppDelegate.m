@@ -13,6 +13,7 @@
 #import <UMCore/UMModuleRegistry.h>
 #import <UMReactNativeAdapter/UMNativeModulesProxy.h>
 #import <UMReactNativeAdapter/UMModuleRegistryAdapter.h>
+#import <Firebase.h>
 
 @interface AppDelegate ()
 
@@ -40,6 +41,8 @@
 
   [super application:application didFinishLaunchingWithOptions:launchOptions];
 
+  [FIRApp configure];
+  
   return YES;
 }
 

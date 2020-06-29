@@ -54,7 +54,7 @@ const Home = () => {
 				(item, index) => item.Title,
 			);
 
-			moviesWithoutNationals = moviesJson.Maria.filter((item,index) => {
+			moviesWithoutNationals = moviesJson.Pedro.filter((item,index) => {
 				return !nationalCountriesTitle.includes(item.Title);
 			});
 

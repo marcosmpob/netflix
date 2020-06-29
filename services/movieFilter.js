@@ -10,8 +10,10 @@ import Geolocation from '@react-native-community/geolocation';
         };
 
         Geolocation.getCurrentPosition(onReceiveLocation, (error) => {
+            
             reject(error);
         });
+        
     });
 
 };
@@ -39,7 +41,7 @@ export const filterByCountry = async (movies, geolocation) => {
 //     console.log(national); 
     
     //console.log(location[0].country);
-    const national = movies.Maria.filter((item, index) => {
+    const national = movies.Pedro.filter((item, index) => {
        
         return (isYourCountry = 
             item.Country.indexOf(location[0].country) !== -1 ||

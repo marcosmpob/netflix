@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "202314621236",
+    "firebase_url": "https://react-native-netflix.firebaseio.com",
+    "project_id": "react-native-netflix",
+    "storage_bucket": "react-native-netflix.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202314621236:android:0b8dd520cdcf89428bc561",
+        "android_client_info": {
+          "package_name": "com.mpob.netflix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202314621236-h0bknkvfelo5fq1dilb18afm9v2hsv80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuTpdiJXytH5VYJ_aikgiDxEOaAx8i35o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202314621236-h0bknkvfelo5fq1dilb18afm9v2hsv80.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
