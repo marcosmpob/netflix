@@ -6,13 +6,17 @@ import Geolocation from '@react-native-community/geolocation';
      
     return new Promise((resolve, reject) => {
         const onReceiveLocation = (geolocation) => {
-            resolve(geolocation);       
+            resolve(geolocation);    
+             
         };
 
         Geolocation.getCurrentPosition(onReceiveLocation, (error) => {
-            
+            console.log('aqui')  
             reject(error);
-        });
+        },{enableHighAccuracy: true, timeout: 10000, maximumAge: 3000});
+
+
+        
         
     });
 
