@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "202314621236",
-    "firebase_url": "https://react-native-netflix.firebaseio.com",
-    "project_id": "react-native-netflix",
-    "storage_bucket": "react-native-netflix.appspot.com"
+    "project_number": "636686751700",
+    "firebase_url": "https://react-netflix-3f945.firebaseio.com",
+    "project_id": "react-netflix-3f945",
+    "storage_bucket": "react-netflix-3f945.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:202314621236:android:0b8dd520cdcf89428bc561",
+        "mobilesdk_app_id": "1:636686751700:android:34b6b5913d330305c96841",
         "android_client_info": {
           "package_name": "com.mpob.netflix"
         }
       },
       "oauth_client": [
         {
-          "client_id": "202314621236-h0bknkvfelo5fq1dilb18afm9v2hsv80.apps.googleusercontent.com",
+          "client_id": "636686751700-jgi48t84v3nhei4i5conedrv846os7k3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mpob.netflix",
+            "certificate_hash": "ea40fdff0c93f9a259c1c1ebf4d9184a5d90b867"
+          }
+        },
+        {
+          "client_id": "636686751700-u8sfvopgkho7p4lki62tu212808ob5pr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBuTpdiJXytH5VYJ_aikgiDxEOaAx8i35o"
+          "current_key": "AIzaSyCYoOvBjqK1FBeQwf9iOWEq5ekOJsycr88"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "202314621236-h0bknkvfelo5fq1dilb18afm9v2hsv80.apps.googleusercontent.com",
+              "client_id": "636686751700-u8sfvopgkho7p4lki62tu212808ob5pr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

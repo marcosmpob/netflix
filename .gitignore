@@ -79,3 +79,7 @@ buck-out/
 # Expo
 .expo/*
 web-build/
+
+
+#google-services
+/android/app/google-services.json

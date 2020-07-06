@@ -10,11 +10,11 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Movies from '../components/Movies'
 
+
 import {filterByCountry, getLocation} from '../services/movieFilter';
-
-
-
 import {useSpring, animated, config} from 'react-spring'
+import messaging from '@react-native-firebase/messaging';
+
 
 const api = [
 	require('../assets/movie1.jpg'),
@@ -40,6 +40,13 @@ const Gradient = styled(LinearGradient)`
 
 
 const Home = () => {
+
+	//const perfil =  navigation.getParams;
+
+	
+
+
+
 	const [movies, setMovies] = useState([]);
 	const [nationalMovies, setNationalMovies] = useState([]);
 

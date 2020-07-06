@@ -94,6 +94,8 @@ const editProfile = (navigation, profiles) => {
 const More = (props) => {
   replaceAvatarsWithImage(props, profilesAvailables);
 
+  //console.log(profilesAvailables)
+
   return (
     <Screen>
       <AvantarsContainer>

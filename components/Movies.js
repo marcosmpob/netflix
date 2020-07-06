@@ -50,7 +50,7 @@ const Movies = (props) => {
       <Label>{props.label}</Label>
       <MovieScroll horizontal>
          {props.data.map((movie, index) => {
-          console.log(movie.Poster);
+          //console.log(movie.Poster);
           return (
             <MovieCard key={String(index)}>
               <TouchableWithoutFeedback
