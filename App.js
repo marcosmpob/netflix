@@ -18,19 +18,16 @@ import { Alert } from 'react-native';
 
 const Stack = createStackNavigator();
 
-messaging().setBackgroundMessageHandler(async remoteMessage => {
-	console.log('Message handled in the background!', remoteMessage);
- });
 
 
-const App = (props) => {
+const App = () => {
 
 	const [main, setMain] = useState();
 
 	useEffect(() => {
 		const unsubscribe = messaging().onMessage(async remoteMessage => {
 		  Alert.alert('A new FCM message arrived!', JSON.stringify(remoteMessage));
-		  remoteMessage.data.billing == "true" ? setMain("More") : setMain("Home")
+		  remoteMessage.data.billing === "true" ? setMain("More") : setMain("Home")
 		});
 
 		 messaging().getToken().then((token) => {
@@ -49,10 +46,24 @@ const App = (props) => {
 					component={Tabs}
 					options={{ headerShown: false }}
 				/>
+				<Stack.Screen
+					name="ProfileToEdit"
+					component={ProfileToEdit}
+					options={{ headerShown: false }}
+				/>
+				<Stack.Screen
+					name="ChooseIcon"
+					component={ChooseIcon}
+					options={{ headerShown: false }}
+				/>
+				<Stack.Screen
+					name="Camera"
+					component={Camera}
+					options={{ headerShown: false }}
+				/>				
 			</Stack.Navigator>
 		</NavigationContainer>
 	);
 }
 
 export default App
-
