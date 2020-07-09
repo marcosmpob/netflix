@@ -47,7 +47,7 @@ const Movies = (props) => {
 
   return (
     <Container>
-      <Label>{props.label}</Label>
+      <Label>{props.label} {props.user}</Label>
       <MovieScroll horizontal>
          {props.data.map((movie, index) => {
           //console.log(movie.Poster);
