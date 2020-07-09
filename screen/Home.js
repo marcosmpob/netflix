@@ -1,4 +1,4 @@
-import React,{ useState,useEffect  } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 
 import { StatusBar, Dimensions } from 'react-native'
 
@@ -11,9 +11,10 @@ import Hero from '../components/Hero'
 import Movies from '../components/Movies'
 
 
-import {filterByCountry, getLocation} from '../services/movieFilter';
-import {useSpring, animated, config} from 'react-spring'
+import { filterByCountry, getLocation } from '../services/movieFilter';
+import { useSpring, animated, config } from 'react-spring'
 import messaging from '@react-native-firebase/messaging';
+import  { ProfieContext }  from '../context/ProfileContext';
 
 
 const api = [
@@ -39,37 +40,40 @@ const Gradient = styled(LinearGradient)`
 `
 
 
-const Home = () => {
-
-	//const perfil =  navigation.getParams;
+const Home = (props) => {
+	
+	const [movies, setMovies] = useState([]);
+	const [nationalMovies, setNationalMovies] = useState([]);
+	
+	const {user, setUser} = useContext(ProfieContext);
 
 	
 
 
-
-	const [movies, setMovies] = useState([]);
-	const [nationalMovies, setNationalMovies] = useState([]);
-
 	useEffect(() => {
+
+	
 		const loadingMovies = async () => {
-			const moviesJson = require('../assets/Movies.json');
+
+		const moviesJson = require('../assets/Movies.json');
+
 			const position = await getLocation();
-			const nationalCountries = await filterByCountry(moviesJson, position);
+			const nationalCountries = await filterByCountry(moviesJson.Pedro, position);
 			setNationalMovies(nationalCountries);
 
 			const nationalCountriesTitle = nationalCountries.map(
 				(item, index) => item.Title,
 			);
-
-			moviesWithoutNationals = moviesJson.Pedro.filter((item,index) => {
+			 	
+			moviesWithoutNationals = moviesJson.Pedro.filter((item, index) => {
 				return !nationalCountriesTitle.includes(item.Title);
 			});
 
 			setMovies(moviesWithoutNationals);
 		};
 		loadingMovies();
-	},[]);
-	
+	}, [user]);
+
 	//console.log(movies);
 	//const PosterProps = useSpring({config: config.gentle,to: {opacity:1},from:{opacity:0.5}})
 	return (
@@ -79,27 +83,29 @@ const Home = () => {
 				backgroundColor='transparent'
 				barStyle='light-content'
 			/>
-			<Container>
-				<Poster source={require('../assets/poster.jpg')}>
-					<Gradient
-						locations={[0, 0.2, 0.6, 0.93]}
-						colors={[
-							'rgba(0,0,0,0.5)',
-							'rgba(0,0,0,0.0)',
-							'rgba(0,0,0,0.0)',
-							'rgba(0,0,0,1)'
-						]}>
-						<Header />
-						<Hero 
-							onAssistirPressed={() => {
-								props.navigation.navigate('ChooseProfile');
-							}}  
-						/>
-					</Gradient>
-				</Poster>
-				<Movies label='Recomendados' data={movies} />
-				<Movies label='Nacionais' data={nationalMovies} />
-			</Container>
+			
+				<Container>
+					<Poster source={require('../assets/poster.jpg')}>
+						<Gradient
+							locations={[0, 0.2, 0.6, 0.93]}
+							colors={[
+								'rgba(0,0,0,0.5)',
+								'rgba(0,0,0,0.0)',
+								'rgba(0,0,0,0.0)',
+								'rgba(0,0,0,1)'
+							]}>
+							<Header />
+							<Hero
+								onAssistirPressed={() => {
+									props.navigation.navigate('ChooseProfile');
+								}}
+							/>
+						</Gradient>
+					</Poster>
+					<Movies label='Recomendados' data={movies} />
+					<Movies label='Nacionais' data={nationalMovies} />
+				</Container>
+			
 		</>
 	)
 }

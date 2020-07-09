@@ -1,8 +1,8 @@
-import React from 'react';
+import React ,{ useContext }from 'react';
 import styled from 'styled-components/native';
 import Avatar from '../components/Avatar';
-import {View} from 'react-native';
 import {MaterialIcons} from '@expo/vector-icons';
+import  { ProfieContext }  from '../context/ProfileContext';
 
 const Screen = styled.View`
   flex: 1;
@@ -94,10 +94,10 @@ const editProfile = (navigation, profiles) => {
 const More = (props) => {
   replaceAvatarsWithImage(props, profilesAvailables);
 
-  //console.log(profilesAvailables)
-
   return (
-    <Screen>
+    <ProfieContext.Consumer>
+    {(consumo) => (
+      <Screen>
       <AvantarsContainer>
         <Row horizontal>
           {profilesAvailables.map((item) => {
@@ -107,7 +107,10 @@ const More = (props) => {
                 image={item.icon}
                 uri={item.uri}
                 name={item.name}
-                onPress={(item) => selectProfile(props.navigation, item)}
+                onPress={() => {
+                  consumo.changeProfile(item.name)
+                  selectProfile(props.navigation, item)}
+                }
               />
             );
           })}
@@ -119,6 +122,8 @@ const More = (props) => {
         <ButtonLabel>Gerenciar perfis</ButtonLabel>
       </NetflixButton>
     </Screen>
+    )}
+    </ProfieContext.Consumer>
   );
 };
 

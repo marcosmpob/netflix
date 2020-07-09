@@ -10,7 +10,7 @@ const Container = styled.TouchableOpacity`
 
 const avatarSize = css`
   width: ${(props) => {
-    console.log('avatarSize', props);
+    //console.log('avatarSize', props);
     return props.big ? '100px' : '60px';
   }};
   height: ${(props) => (props.big ? '100px' : '60px')};

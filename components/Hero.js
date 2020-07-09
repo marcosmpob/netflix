@@ -1,8 +1,10 @@
-import React from 'react'
+import React , { useContext } from 'react'
 
 import styled from 'styled-components/native'
 
 import { Feather, Ionicons } from '@expo/vector-icons'
+import { Text, StyleSheet } from 'react-native';
+import  { ProfieContext }  from '../context/ProfileContext';
 
 const Container = styled.View`
 	position: absolute;
@@ -70,6 +72,8 @@ const TextButtonPlay = styled.Text`
 `
 
 const Hero = (props) => {
+
+	const {user, setUser} = useContext(ProfieContext);
 	return (
 		<Container>
 			<Banner resizeMode='contain' source={require('../assets/banner.png')} />
@@ -98,8 +102,17 @@ const Hero = (props) => {
 					<TextButton>Saiba mais</TextButton>
 				</Button>
 			</MenuHero>
+			<Text style={styles.innerText}>Olá {user} </Text>
 		</Container>
 	)
 }
+
+const styles = StyleSheet.create({
+	innerText: {
+	  color: 'white'
+	  ,fontWeight: 'bold'
+	}
+  });
+  
 
 export default Hero

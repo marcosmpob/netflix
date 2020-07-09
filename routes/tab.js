@@ -9,6 +9,7 @@ import Home from '../screen/Home';
 import Downloads from '../screen/Downloads';
 import ProfileToEdit from '../screen/ProfileToEdit';
 import More from '../screen/More';
+import  { ProfieContext }  from '../context/ProfileContext';
 
 
 const Tab = createBottomTabNavigator();
@@ -16,6 +17,7 @@ const Tab = createBottomTabNavigator();
 
 export const Tabs = (props) => {
   return (
+    
     <Tab.Navigator
       tabBarOptions={{
         backgroundColor: 'black',
@@ -35,6 +37,7 @@ export const Tabs = (props) => {
           ),
         }}
       />
+
       <Tab.Screen
         name="Buscar"
         component={Downloads}
@@ -72,7 +75,8 @@ export const Tabs = (props) => {
           ),
         }}
       />
-
+      
     </Tab.Navigator>
+    
   );
 }
