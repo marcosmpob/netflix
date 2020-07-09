@@ -1,18 +1,18 @@
-import React from 'react';
+import React ,{ useState, useEffect } from 'react';
 import { Text, View, TouchableOpacity } from 'react-native';
-import { Camera } from 'expo-camera';
+import { RNCamera } from 'react-native-camera';
 import { Ionicons } from '@expo/vector-icons'; 
 
 export default class CameraScreen extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { type: Camera.Constants.Type.back, hasPermission: null }
+        this.state = { type: RNCamera.Constants.Type.back, hasPermission: null }
     }
 
     componentDidMount() {
 
         const handlePermission = async () => {
-            const { status } = await Camera.requestPermissionsAsync();
+            const { status } = await requestPermissionsAsync();
             this.setState({ hasPermission: status === 'granted' });
 
         }
@@ -25,7 +25,7 @@ export default class CameraScreen extends React.Component {
         return (
 
             <View style={{ flex: 1}}>
-                <Camera
+                <RNCamera
                     ref={(ref) => {
                         this.camera = ref;
                     }}
@@ -82,7 +82,7 @@ export default class CameraScreen extends React.Component {
                             <Ionicons name="md-reverse-camera" size={24} color="white" />
                         </TouchableOpacity>                        
                     </View>
-                </Camera>
+                </RNCamera>
             </View>
         );
     }
